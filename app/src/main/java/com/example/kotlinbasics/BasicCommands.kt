@@ -30,8 +30,12 @@ fun main(){
     val myCharLetter: Char = 'J'
     val myCharNumber: Char = '7'
 
-    println("First character " + firstCharInString)
+    println("First character" + firstCharInString)
     println("Last character " + lastCharInString)
 
+    //endregion
+
+    //region Template
+        println("The length of myString is ${myString.length} letters")
     //endregion
 }
