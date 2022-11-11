@@ -30,12 +30,103 @@ fun main(){
     val myCharLetter: Char = 'J'
     val myCharNumber: Char = '7'
 
-    println("First character" + firstCharInString)
-    println("Last character " + lastCharInString)
+    /*println("First character" + firstCharInString)
+    println("Last character " + lastCharInString)*/
 
     //endregion
 
     //region Template
-        println("The length of myString is ${myString.length} letters")
+//        println("The length of myString is ${myString.length} letters")
+    //endregion
+
+    // region Arithmetic Operators  (+,    -,    *,   /,     %)
+
+    // Multiplication
+    var result0 = 5+2f
+    result0 *= 2
+//    println(result0)
+
+    // Division
+    var result1 = 5+2f
+    result1 /= 2
+//    println(result1)
+
+    // Plus equal
+    var result2 = 5+2f
+    result2 += 2
+//    println(result2)
+
+    // Minus
+    var result3 = 5+2f
+    result3 -= 2
+//    println(result3)
+
+    // Modulo
+    var result4 = 5+2f
+    result4 = 21%2f
+//    println(result4)
+
+    //endregion
+
+    // region Comparison Operators  (==,    !=,     <,   >,     <=,     >=)
+    val a = 21
+    val b = 7
+
+    // ==
+    val isEqual = a==b
+//    println("The result is $isEqual")
+
+    // !=
+    val isNotEqual = a != b
+//     println("The result is $isNotEqual")
+
+    // < or <=
+//    println("The result is ${7 < -21}")
+//    println("The result is ${7 <= 21}")
+
+    // > or >=
+//    println("The result is ${7 > 21}")
+//    println("The result is ${7 >= -21}")
+    //endregion
+
+    // region Assignment operators (+=,     -=,     *=,     /=,     %=)
+
+    // +=
+    var myNum = 7
+    myNum += 7
+    println("$myNum")
+
+        //region Increments & Decrements    (++,    --)
+            // ++
+            myNum++
+            println("Printing with ++ $myNum")
+
+            ++myNum
+            println("Printing with ++ in other side $myNum")
+
+            // --
+            myNum--
+            println("Printing with -- $myNum")
+
+            --myNum
+            println("Printing with -- in other side $myNum")
+        // endregion
+
+    // -=
+    myNum -= 7
+    println("$myNum")
+
+    // *=
+    myNum *= 7
+    println("$myNum")
+
+    // /=
+    myNum /= 7
+    println("$myNum")
+
+    // %=
+    myNum %= 7
+    println("$myNum")
+
     //endregion
 }
