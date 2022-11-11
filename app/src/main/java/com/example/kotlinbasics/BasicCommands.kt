@@ -97,19 +97,20 @@ fun main(){
     println("$myNum")
 
         //region Increments & Decrements    (++,    --)
-            // ++
-            myNum++
-            println("Printing with ++ $myNum")
 
-            ++myNum
-            println("Printing with ++ in other side $myNum")
+        // ++
+        myNum++
+        println("Printing with ++ $myNum")
 
-            // --
-            myNum--
-            println("Printing with -- $myNum")
+        ++myNum
+        println("Printing with ++ in other side $myNum")
 
-            --myNum
-            println("Printing with -- in other side $myNum")
+        // --
+        myNum--
+        println("Printing with -- $myNum")
+
+        --myNum
+        println("Printing with -- in other side $myNum")
         // endregion
 
     // -=
