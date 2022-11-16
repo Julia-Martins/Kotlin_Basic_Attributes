@@ -94,40 +94,118 @@ fun main(){
     // +=
     var myNum = 7
     myNum += 7
-    println("$myNum")
+    //println("$myNum")
 
         //region Increments & Decrements    (++,    --)
 
         // ++
         myNum++
-        println("Printing with ++ $myNum")
+//        println("Printing with ++ $myNum")
 
         ++myNum
-        println("Printing with ++ in other side $myNum")
+//        println("Printing with ++ in other side $myNum")
 
         // --
         myNum--
-        println("Printing with -- $myNum")
+//        println("Printing with -- $myNum")
 
         --myNum
-        println("Printing with -- in other side $myNum")
+//        println("Printing with -- in other side $myNum")
         // endregion
 
     // -=
     myNum -= 7
-    println("$myNum")
+//    println("$myNum")
 
     // *=
     myNum *= 7
-    println("$myNum")
+//    println("$myNum")
 
     // /=
     myNum /= 7
-    println("$myNum")
+//    println("$myNum")
 
     // %=
     myNum %= 7
-    println("$myNum")
+//    println("$myNum")
 
     //endregion
+
+    //region If Statements (If/  Else If/  Else)
+    val heightPerson10 = 170
+    val heightPerson20 = 189
+
+    if(heightPerson10  > heightPerson20){
+//        println("Person 10 is taller than Person 20")
+    }else if(heightPerson10 == heightPerson20){
+//        println("Person 10 is equal than Person 20")
+    }else{
+//        println("Person 20 is taller than Person 10")
+    }
+
+    // Exercise
+
+    val age = 13
+    val drinkAge = 21
+    val voteAge = 18
+    val driveAge = 16
+
+    if(age >= drinkAge){
+//        println("You have $age")
+//        println("Now you can do whatever you want, but you wil pay the consequences")
+    }else if(age >= voteAge){
+//        println("You have $age")
+//        println("Now you can vote in a candidate")
+    }else if(age >= driveAge){
+//        println("You have $age")
+//        println("Now you can drive, but be careful to crash the vehicular")
+    }else{
+//        println("You can't do anything yet, just wait some time for you grow up")
+    }
+
+    //endregion
+
+    // region When Expressions (When)
+    var season = 3
+
+    when(season){
+        1 -> println("Spring")
+        2 -> println("Summer")
+        3 ->{
+            println("Fall")
+            println("Autumn")
+        }
+        4 -> println("Winter")
+        else -> println("Invalid Season")
+    }
+
+    var month = 3
+    when(month){
+        in 3..5 -> println("Spring")
+        in 6..8 -> println("Summer")
+        in 9..11 -> {
+            println("Fall")
+            println("Autumn")
+        }
+        in 12 downTo 2 -> println("Winter")
+        else -> println("Invalid Month")
+    }
+
+    when(age){
+        !in 0..20 -> println("Now you may drink in US")
+        in 18..20 -> println("Now you may vote in so many countries")
+        in 16..17 -> println("Now you may drive in US")
+        else -> println("You're too young")
+    }
+
+    var x : Any = 21.7f
+
+    when(x){
+        is Int -> println("$x is an Int")
+        is Double -> println("$x is a Double")
+        is String -> println("$x is a String")
+        else -> println("$x is none of the above")
+    }
+
+    // endregion
 }
