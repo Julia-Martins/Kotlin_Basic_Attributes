@@ -36,7 +36,7 @@ fun main(){
     //endregion
 
     //region Template
-//        println("The length of myString is ${myString.length} letters")
+        println("The length of myString is ${myString.length} letters")
     //endregion
 
     // region Arithmetic Operators  (+,    -,    *,   /,     %)
@@ -44,27 +44,27 @@ fun main(){
     // Multiplication
     var result0 = 5+2f
     result0 *= 2
-//    println(result0)
+    println(result0)
 
     // Division
     var result1 = 5+2f
     result1 /= 2
-//    println(result1)
+    println(result1)
 
     // Plus equal
     var result2 = 5+2f
     result2 += 2
-//    println(result2)
+    println(result2)
 
     // Minus
     var result3 = 5+2f
     result3 -= 2
-//    println(result3)
+    println(result3)
 
     // Modulo
     var result4 = 5+2f
     result4 = 21%2f
-//    println(result4)
+    println(result4)
 
     //endregion
 
@@ -74,19 +74,19 @@ fun main(){
 
     // ==
     val isEqual = a==b
-//    println("The result is $isEqual")
+    println("The result is $isEqual")
 
     // !=
     val isNotEqual = a != b
-//     println("The result is $isNotEqual")
+     println("The result is $isNotEqual")
 
     // < or <=
-//    println("The result is ${7 < -21}")
-//    println("The result is ${7 <= 21}")
+    println("The result is ${7 < -21}")
+    println("The result is ${7 <= 21}")
 
     // > or >=
-//    println("The result is ${7 > 21}")
-//    println("The result is ${7 >= -21}")
+    println("The result is ${7 > 21}")
+    println("The result is ${7 >= -21}")
     //endregion
 
     // region Assignment operators (+=,     -=,     *=,     /=,     %=)
@@ -94,40 +94,40 @@ fun main(){
     // +=
     var myNum = 7
     myNum += 7
-    //println("$myNum")
+    println("$myNum")
 
         //region Increments & Decrements    (++,    --)
 
         // ++
         myNum++
-//        println("Printing with ++ $myNum")
+        println("Printing with ++ $myNum")
 
         ++myNum
-//        println("Printing with ++ in other side $myNum")
+        println("Printing with ++ in other side $myNum")
 
         // --
         myNum--
-//        println("Printing with -- $myNum")
+        println("Printing with -- $myNum")
 
         --myNum
-//        println("Printing with -- in other side $myNum")
+        println("Printing with -- in other side $myNum")
         // endregion
 
     // -=
     myNum -= 7
-//    println("$myNum")
+    println("$myNum")
 
     // *=
     myNum *= 7
-//    println("$myNum")
+    println("$myNum")
 
     // /=
     myNum /= 7
-//    println("$myNum")
+    println("$myNum")
 
     // %=
     myNum %= 7
-//    println("$myNum")
+    println("$myNum")
 
     //endregion
 
@@ -136,11 +136,11 @@ fun main(){
     val heightPerson20 = 189
 
     if(heightPerson10  > heightPerson20){
-//        println("Person 10 is taller than Person 20")
+        println("Person 10 is taller than Person 20")
     }else if(heightPerson10 == heightPerson20){
-//        println("Person 10 is equal than Person 20")
+        println("Person 10 is equal than Person 20")
     }else{
-//        println("Person 20 is taller than Person 10")
+        println("Person 20 is taller than Person 10")
     }
 
     // Exercise
@@ -151,16 +151,16 @@ fun main(){
     val driveAge = 16
 
     if(age >= drinkAge){
-//        println("You have $age")
-//        println("Now you can do whatever you want, but you wil pay the consequences")
+        println("You have $age")
+        println("Now you can do whatever you want, but you wil pay the consequences")
     }else if(age >= voteAge){
-//        println("You have $age")
-//        println("Now you can vote in a candidate")
+        println("You have $age")
+        println("Now you can vote in a candidate")
     }else if(age >= driveAge){
-//        println("You have $age")
-//        println("Now you can drive, but be careful to crash the vehicular")
+        println("You have $age")
+        println("Now you can drive, but be careful to crash the vehicular")
     }else{
-//        println("You can't do anything yet, just wait some time for you grow up")
+        println("You can't do anything yet, just wait some time for you grow up")
     }
 
     //endregion
