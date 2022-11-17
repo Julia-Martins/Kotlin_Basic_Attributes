@@ -99,7 +99,7 @@ fun main(){
         //region Increments & Decrements    (++,    --)
 
         // ++
-        myNum++
+//        myNum++
 //        println("Printing with ++ $myNum")
 
         ++myNum
@@ -136,11 +136,11 @@ fun main(){
     val heightPerson20 = 189
 
     if(heightPerson10  > heightPerson20){
-//        println("Person 10 is taller than Person 20")
+        println("Person 10 is taller than Person 20")
     }else if(heightPerson10 == heightPerson20){
-//        println("Person 10 is equal than Person 20")
+        println("Person 10 is equal than Person 20")
     }else{
-//        println("Person 20 is taller than Person 10")
+        println("Person 20 is taller than Person 10")
     }
 
     // Exercise
@@ -166,46 +166,46 @@ fun main(){
     //endregion
 
     // region When Expressions (When)
-//    var season = 3
+    var season = 3
 
-//    when(season){
-//        1 -> println("Spring")
-//        2 -> println("Summer")
-//        3 ->{
-//            println("Fall")
-//            println("Autumn")
-//        }
-//        4 -> println("Winter")
-//        else -> println("Invalid Season")
-//    }
+    when(season){
+        1 -> println("Spring")
+        2 -> println("Summer")
+        3 ->{
+            println("Fall")
+            println("Autumn")
+        }
+        4 -> println("Winter")
+        else -> println("Invalid Season")
+    }
 
-//    var month = 3
-//    when(month){
-//        in 3..5 -> println("Spring")
-//        in 6..8 -> println("Summer")
-//        in 9..11 -> {
-//            println("Fall")
-//            println("Autumn")
-//        }
-//        in 12 downTo 2 -> println("Winter")
-//        else -> println("Invalid Month")
-//    }
+    var month = 3
+    when(month){
+        in 3..5 -> println("Spring")
+        in 6..8 -> println("Summer")
+        in 9..11 -> {
+            println("Fall")
+            println("Autumn")
+        }
+        in 12 downTo 2 -> println("Winter")
+        else -> println("Invalid Month")
+    }
 
-//    when(age){
-//        !in 0..20 -> println("Now you may drink in US")
-//        in 18..20 -> println("Now you may vote in so many countries")
-//        in 16..17 -> println("Now you may drive in US")
-//        else -> println("You're too young")
-//    }
+    when(age){
+        !in 0..20 -> println("Now you may drink in US")
+        in 18..20 -> println("Now you may vote in so many countries")
+        in 16..17 -> println("Now you may drive in US")
+        else -> println("You're too young")
+    }
 
-//    var x : Any = 21.7f
+    var x : Any = 21.7f
 
-//    when(x){
-//        is Int -> println("$x is an Int")
-//        is Double -> println("$x is a Double")
-//        is String -> println("$x is a String")
-//        else -> println("$x is none of the above")
-//    }
+    when(x){
+        is Int -> println("$x is an Int")
+        is Double -> println("$x is a Double")
+        is String -> println("$x is a String")
+        else -> println("$x is none of the above")
+    }
 
     // endregion
 
@@ -213,13 +213,13 @@ fun main(){
 
     var x = 21
     while(x >= 0){
-        //println("$x")
+        println("$x")
         x -= 2
     }
 
     x = 100
     do{
-//        println("$x")
+        println("$x")
         x--
     }while (x >= 90)
 
@@ -235,4 +235,22 @@ fun main(){
     }
 
     //endregion
+
+    // region Loop(FOR)
+    println("____________")
+    for(num in 1..10){
+        print("$num ")
+    }
+
+    println("\n____________")
+    for(i in 1 until 10){
+        print("$i ")
+    }
+
+    println("\n____________")
+    for(i in 10.downTo(1) step (2)){ //    for(i in 10 downTo  1 step 2){
+        print("$i ")
+    }
+
+    // endregion
 }
