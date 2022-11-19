@@ -258,9 +258,9 @@ fun main(){
     // Exercise FOR
     for(num in 0..10000){
         if(num == 8001){
-            println("É MAIS DE 8000!!!")
+//            println("É MAIS DE 8000!!!")
         }else if(num == 9001){
-            println("IT'S OVER 9000!!!")
+//            println("IT'S OVER 9000!!!")
         }
     }
 
@@ -270,11 +270,32 @@ fun main(){
 
     while (humidity == "Humid"){
         humidityLevel -= 5
-        println("Humidity decreased")
+//        println("Humidity decreased")
         if (humidityLevel < 60){
-            println("It's comfy now")
+//            println("It's comfy now")
             humidity = "Comfy"
         }
+    }
+    // endregion
+
+    // region BREAK and CONTINUE
+
+    // Break
+    println("This loop will finish when i divided for 2 is equal 5")
+    for(i in 1 until 20){
+        if(i/2 == 5){
+            break
+        }
+        print("$i ")
+    }
+
+    // Continue
+    println("\nThis loop will delete the numbers that divided for 2 is equal 5")
+    for(i in 1 until 20){
+        if(i/2 == 5){
+            continue
+        }
+        print("$i ")
     }
     // endregion
 }
