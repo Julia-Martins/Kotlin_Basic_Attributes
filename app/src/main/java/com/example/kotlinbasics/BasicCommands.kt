@@ -281,21 +281,75 @@ fun main(){
     // region BREAK and CONTINUE
 
     // Break
-    println("This loop will finish when i divided for 2 is equal 5")
+//    println("This loop will finish when i divided for 2 is equal 5")
     for(i in 1 until 20){
         if(i/2 == 5){
             break
         }
-        print("$i ")
+//        print("$i ")
     }
 
     // Continue
-    println("\nThis loop will delete the numbers that divided for 2 is equal 5")
+//    println("\nThis loop will delete the numbers that divided for 2 is equal 5")
     for(i in 1 until 20){
         if(i/2 == 5){
             continue
         }
-        print("$i ")
+//        print("$i ")
     }
     // endregion
+
+    // region Call a function
+
+    // Arguments
+    var result = addUp(7, 21)
+    val avg = avg(21.7, 72.8)
+
+//    println("The AVG is $avg")
+//    println("Result is $result")
+    // endregion
+
+    // region Nullable
+
+    var nullableName : String? = "Julia"
+//    nullableName = null
+
+    // Comment: This will work just in Kotlin
+    // Comment: This is other form to do a IF in your code, but probably
+    // it'll work just in Kotlin
+    var lenNull = nullableName?.length
+    // Comment: I don't know why, but apparently if a put IT in my code just didn't work,
+    // now I put the variable and work, so strange
+    nullableName?.let { println(nullableName.length) }
+//    println("${nullableName?.toUpperCase()}")
+
+    // ?: Elvis operator
+    val name = nullableName ?: "Lucas"
+//    println("Name is $name")
+//    println(nullableName!!.toUpperCase())
+
+    /* Comment: This will work in both languages JAVA and Kotlin
+    if(nullableName != null) {
+        var lenNull = nullableName.length
+    }else{
+        null
+    }*/
+
+    // endregion
 }
+
+// region Make a FUNCTION
+
+fun avg(a: Double, b: Double): Double{
+    return a + b / 2
+}
+
+// Function with parameter
+fun addUp(a: Int, b: Int) : Int{
+    return a + b
+}
+
+fun myFunction(){
+    print("Using a function")
+}
+// endregion
